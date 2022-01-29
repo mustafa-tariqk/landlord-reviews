@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 export default function NavBar() {
     const user = null;
-    const username = null;
 
     return (
         <nav className="navbar">
@@ -14,7 +13,7 @@ export default function NavBar() {
             </li>
     
             {/* user is signed-in and has username */}
-            {username && (
+            {user && (
               <>
                 <li className="push-left">
                   <Link href="/admin">
@@ -30,7 +29,7 @@ export default function NavBar() {
             )}
     
             {/* user is not signed OR has not created username */}
-            {!username && (
+            {!user && (
               <li>
                 <Link href="/enter">
                   <button className="btn-blue">Log in</button>
