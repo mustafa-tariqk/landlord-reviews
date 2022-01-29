@@ -22,11 +22,6 @@ export default function NavBar() {
                     <button className="btn-blue">Write Posts</button>
                   </Link>
                 </li>
-                <li>
-                  <Link href={`/${username}`}>
-                    <img src={user?.photoURL} />
-                  </Link>
-                </li>
               </>
             )}
     
