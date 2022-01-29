@@ -1,7 +1,8 @@
 import Link from 'next/link';
 
 export default function NavBar() {
-    const { user, username } = { };
+    const user = null;
+    const username = null;
 
     return (
         <nav className="navbar">
